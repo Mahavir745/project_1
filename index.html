@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project one</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="container">
+        <div class="login_container">
+          <div class="child" id="child1">
+            <h1>Login</h1>
+          </div>
+          <div class="child" id="child2">
+            <form action="#">
+              <div class="child2_item" id="child2_item1 ">
+                <label for="loginId">Enter your unique Id:</label>
+                <input type="text" name="email" id="loginId" required />
+              </div>
+              <div class="child2_item" id="child2_item2 ">
+                <label for="loginPassword">Password:</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="loginPassword"
+                  required
+                />
+              </div>
+              <div class="child2_item" id="child2_item3">
+                <button id="submit_btn1">Submit</button>
+              </div>
+            </form>
+            <div class="child2_item" id="child2_item4">
+              <div class="item4_child" id="item4_child1">
+                <p>Managed by Mveer745</p>
+                <ul>
+                  <li>
+                    <a href="https://mahavir745.github.io/portfolio/" target="_blank"><img src="assest/assest_01.svg" alt="profile" /></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/Mahavir745" target="_blank"><img src="assest/assest_02.svg" alt="github" /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/mahavir-kumar-mahato-4a6754297"><img src="assest/assest_03.svg" target="_blank" alt="linkedin" /></a>
+                  </li>
+                </ul>
+                <p>If you don't have an account <a href="#" id="sign_up">Sign up</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="signup_container">
+          <div class="child" id="child1">
+            <h1>Sign up</h1>
+          </div>
+          <div class="child" id="child2">
+            <form action="">
+              <div class="child2_item" id="child2_item1">
+                <label for="">Username:</label>
+                <input type="text" placeholder="firstname" id="firstName">
+                <input type="text" placeholder="lastname" id="lastName">
+              </div>
+              <div class="child2_item" id="child2_item2">
+                <label for="signup_email">Email</label>
+                <input type="email" placeholder="eg: xyz@gmail.com" name="email" id="signup_email">
+              </div>
+              <div class="child2_item" id="child2_item3">
+                <label for="signup_contact">Contact:</label>
+                <input type="text" name="contact" placeholder="eg:1234567890" id="signup_contact">
+              </div>
+              <div class="child2_item" id="child2_item4">
+                <label for="create_password">Create Password</label>
+                <input type="password" name="create_password" id="create_password">
+              </div>
+              <div class="child2_item" id="child2_item5">
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" name="confirm_password" id="confirm_password">
+              </div>
+              <div class="child2_item" id="child2_item6">
+                <button type="submit" id="submit_btn2">Register Here:</button>
+                <p>Already have an account <a href="#" id="login_here">Login Here</a></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <h3>Your Id: <span id="uniqueIdDisplay"></span><br>
+          password: <span id="passkeyDisplay"></span>
+        </h3>
+        <p>click on pop-up to remove</p>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,330 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+  --bg-color1:#057f79;
+  --bg-color2:#008000f2;
+  --bg-color3:#087eac;
+  --bg-color4:#f3eded;
+  --bg-color5:#e2e6e5;
+  --font-color1:#ddd;
+  --font-color2:#f1f1f1;
+  --font-color3:#808080;
+  --font-color4:#2c2a2a;
+  --border-color1:#342d2e;
+  --border-color2:#716c6cc7;
+  --border-color3:#87ceeb;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+button{
+  cursor: pointer;
+}
+
+.main_container{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container{
+    width: 600px;
+    cursor: pointer;
+    height: 600px;
+    box-shadow: 1px 1px 1px gray,-1px -1px 1px gray;
+    position: relative;
+    overflow: hidden;
+  }
+
+}
+
+
+/* todo: Login part start */
+
+.login_container{
+  /* margin: 50px auto; */
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  border-radius: 4px;
+  position: absolute;
+
+  /* border: 1px solid red; */
+
+  #child1{
+    margin: 20px auto;
+    width: 480px;
+    height: 66px;
+    border: 1px solid green;
+    color: var(--font-color2);
+    text-align: center;
+    padding: 10px ;
+    background-color: var(--bg-color2);
+  }
+
+  #child2{
+    margin: auto;
+    padding-top: 20px;
+    width: 480px;
+    height: calc(600px - 176px);
+    border: 1px solid var(--font-color1);
+    background-color: var(--font-color2);
+
+
+    .child2_item{
+      margin: 10px auto;
+      width: 420px;
+      height: 89px;
+      /* border: 1px solid red; */
+      
+      label{
+        display: block;
+        color: var(--font-color4);
+        margin: 4px 0px 8px 10px;
+      }
+
+      input{
+        width: 380px;
+        height: 46px;
+        border: none;
+        outline: 1px solid var(--border-color2);
+        border-radius: 4px;
+        opacity: 50%;
+        color: var(--font-color4);
+        font-size: 18px;
+        margin: 4px 0px 8px 10px;
+        padding-left: 10px;
+      }
+
+      input:focus{
+        outline: 1px solid var(--border-color3);
+        opacity: 100%;
+      }
+
+      #message{
+        top: -6px;
+        font-size: 13px;
+        color: red;
+        text-align: center;
+        position: relative;
+      }
+
+    }
+    #child2_item3{
+      width: 420px;
+      height:50px ;
+      /* border: 1px solid blue; */
+
+      button{
+        width: 100%;
+        margin: 4px 0px;
+        background-color: var(--bg-color3);
+        color: var(--font-color2);
+        border: none;
+        font-size: 16px;
+        opacity: 90%;
+        border-radius: 4px;
+        height: 40px;
+      }
+      button:hover{
+        opacity: 100%;
+      }
+    }
+    
+    #child2_item4{
+      width: 420px;
+      height: 120px;
+      
+
+      ul{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        li{
+          width: 40px;
+          border-radius: 50%;
+          border: 1px solid var(--font-color4);
+          height: 40px;
+
+          a{
+            display: inline-block;
+            margin: 8px 8px;
+            width: 20px;
+            height: 20px;
+            /* border: 1px solid; */
+          
+            img{
+              width: 100%;
+            }
+          }
+
+        }
+      }
+
+      p{
+        margin-top: 10px;
+        text-align: center;
+
+        a{
+          text-decoration: underline;
+          color: red;
+        }
+      }
+    }
+
+
+  }
+}
+
+/* todo: Login part end */
+
+
+.signup_container{
+  width: 600px;
+  height: 600px;
+  top: 600px;
+  position: absolute;
+  /* border: 1px solid rgb(106, 103, 103); */
+  background-color: white;
+  transform: translate(600px, 0px); 
+  transition: all 1s ease;
+
+  .child{
+    width: 540px;
+    height: 56px;
+    border: 1px solid var(--border-color2);
+    border-radius: 4px;
+    margin: 20px auto;
+  }
+
+  #child1{
+    text-align: center;
+    padding: 6px 0px 0px 0px;
+    background-color: var(--bg-color3);
+    color: var(--font-color2);
+  }
+
+  #child2{
+    height:480px;
+    background-color: var(--bg-color5);
+
+    .child2_item{
+      width: 480px;
+      height: 67px;
+      margin:10px auto;
+      /* border: 1px solid; */
+
+      label{
+        display:block;
+        color: var(--border-color1);
+      }
+
+      input{
+        width: 90%;
+        height: 36px;
+        margin: 8px 0px 0px 8px;
+        padding-left: 20px;
+        font-size: 14px;
+        border-radius: 4px;
+        border: none;
+        opacity: 70%;
+        outline: 1px solid var(--border-color1);
+      }
+      input:focus{
+        border: none;
+        opacity: 100%;
+        outline: 1px solid var(--border-color3);
+      }
+    }
+
+    #child2_item1{
+
+      input{
+        width: 45%;
+        height: 36px;
+        margin-top: 4px;
+      }
+
+    }
+    #child2_item6{
+      button{
+        width: 30%;
+        height: 36px;
+        margin-left: 10px;
+        opacity: 80%;
+        border: none;
+        color: var(--font-color2);
+        background-color: var(--bg-color2);
+      }
+      p{
+        margin-top: 10px;
+        text-align: center;
+
+        a{
+          text-decoration: underline;
+        }
+      }
+      button:hover{
+        opacity: 100%;
+        scale: .98;
+      }
+    }
+  }
+}
+
+.slide_effect{
+  top: 0px;
+  transform: translate(0px, 0px);
+
+}
+
+
+.message{
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  width: 400px;
+  height: 160px;
+  padding: 20px 16px 10px 20px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 24px;
+  display: none;
+  line-height: 1.6;
+
+  span{
+    display: inline-block;
+    color: var(--bg-color3);
+  }
+
+  p{
+    color: red;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+}
+
+
+.messageDisplay{
+  display: block;
+}
