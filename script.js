@@ -5,13 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let signUp = document.querySelector("#sign_up");
   let login = document.querySelector("#login_here");
 
-  //! default
+  //! message(pop-up) section:
   message.addEventListener("click", () => {
     message.classList.remove("messageDisplay");
   });
 
   //! setup: section:
-
   signUp.addEventListener("click", (e) => {
     let signup_container = document.querySelector(".signup_container");
     signup_container.classList.add("slide_effect");
@@ -23,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // //! sign_up data:
-
   let data = [];
   register.addEventListener("click", (e) => {
     e.preventDefault();
@@ -37,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const passkeyDisplay = document.querySelector("#passkeyDisplay");
     const message = document.querySelector(".message");
 
-    //! making unique id:
-
+    //! formed an unique id:
     let numbers = ["0123456789"];
     let found = signup_email.indexOf("@");
     let uniqueId = signup_email.split("").splice(0, found).join("");
@@ -48,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     //! validation section:
-
     let count = 0;
     if(firstName != "" && lastName !=""){
       count++
@@ -92,11 +88,6 @@ document.addEventListener("DOMContentLoaded", () => {
           message.classList.add("messageDisplay");
         }, 2000);
       }
-
-
-      //! extra features:
-
-
     } 
     else {
       alert("Input should be a value")
@@ -104,9 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
-
   //! login data
-
   submitBtn.addEventListener("click", (e) => {
     const loginId = document.querySelector("#loginId").value;
     const loginPassword = document.querySelector("#loginPassword").value;
@@ -141,10 +130,5 @@ document.addEventListener("DOMContentLoaded", () => {
       else {
         alert("Input field should be a value");
       }
-    
-    
-
   });
-
-
 });
