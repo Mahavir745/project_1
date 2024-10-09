@@ -95,9 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 2000);
       }
     } 
-    else {
-      alert("Input should be a value")
-    }
+    // else {
+    //   alert("Input should be a value")
+    // }
   });
 
 
