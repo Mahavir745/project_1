@@ -48,7 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
     let count = 0;
     if(firstName != "" && lastName !=""){
       count++
+    }else{
+      alert("Input should be a value. Try Again")
     }
+
     if (signup_email.includes("@gmail.com") && signup_email != "") {
       count++;
     }
@@ -65,6 +68,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (create_password === confirm_password && confirm_password != "" && create_password) {
       count++;
+    }else{
+      alert("password not matched! try again")
     }
 
     if (count === 4) {
