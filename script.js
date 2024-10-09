@@ -52,9 +52,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (signup_email.includes("@gmail.com") && signup_email != "") {
       count++;
     }
+    else{
+      alert("email should be @gmail.com")
+    }
 
     if (signup_contact.length === 10 && signup_contact != "") {
       count++;
+    }
+    else{
+      alert("contact should be 10 digit number")
     }
 
     if (create_password === confirm_password && confirm_password != "" && create_password) {
